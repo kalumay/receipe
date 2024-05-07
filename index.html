@@ -7,6 +7,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Recipe page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -23,10 +29,12 @@
       display: flex;
       justify-content: center;
       padding: 16px;
-      gap: 16px;
       flex-direction: column;
       align-items: center;
-      background-color: rgba(229, 214, 183, 0.3)
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      background-color: rgba(229, 214, 183, 0.3);
     }
 
     /* Styling the card */
@@ -61,12 +69,11 @@
   }
 
   .preparation li {
-    padding-left: 16px;
+    padding: 8px
   }
 
   .content li {
-    padding-left: 16px;
-    gap: 8px;
+    padding: 8px;
   }
 
   .content p{
@@ -74,14 +81,27 @@
   }
 
     .card h1 {
-      font-family: Helvetica, sans-serif;
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      font-style: normal;
       /*font-family: sans-serif;*/
     }
     .card h2 {
       color: rgb(114, 71, 41);
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      font-style: normal;
     }
     .card h3 {
       color: rgb(71, 15, 43);
+    }
+    .card h4 {
+      color: rgb(114, 71, 41);
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      padding: 0%;
     }
     .table {
       width: 100%;
@@ -89,7 +109,7 @@
     }
     .table td {
       border-bottom: 1px solid;
-      padding: 16px;
+      padding-left: 32px;
     }
     .table tr:last-child td {
       border-bottom: none;
@@ -103,7 +123,7 @@
       <img src="./assets/images/image-omelette.jpeg"></div>
   <div class="content">
     <h1>Simple Omelette Recipe</h1>
-    <p>Easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection,
+    <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection,
        optionally filled with your choice of cheese, vegetables, or meats.</p>
  
  <div class="preparation"> 
@@ -152,19 +172,19 @@
 <table class="table">
   <tr>
     <td>Calories</td>
-    <td>277kcal</td>
+    <td><h4>277kcal</h4></td>
   </tr>
   <tr>
     <td>Carbs</td>
-    <td>0g</td>
+    <td><h4>0g</h4></td>
   </tr>
   <tr>
     <td>Protein</td>
-    <td>20g</td>
+    <td><h4>20g</h4></td>
   </tr>
   <tr>
     <td>Fat</td>
-    <td>22g</td>
+    <td><h4>22g</h4></td>
   </tr>
 </table>
 </p>
