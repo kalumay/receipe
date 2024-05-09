@@ -28,7 +28,7 @@
     .container {
       display: flex;
       justify-content: center;
-      padding: 16px;
+      padding: 8px;
       flex-direction: column;
       align-items: center;
       font-family: "Outfit", sans-serif;
@@ -41,44 +41,33 @@
     .card {
       max-width: 600px; /* Set a maximum width for the card */
       background-color: #fff;
-      border-radius: 8px;
+      border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a shadow effect */
       justify-content: center;
       padding: 32px;
+      padding-bottom: 0px;
     }
 
     /* Styling the image */
     .card img {
       max-width: 100%; /* Ensure the image doesn't exceed the card width */
       border-radius: 8px;
-      /*padding: 8px*/
     }
 
     /* Styling the content */
     .content {
-    color: rgba(43, 53, 61, 1);
+     padding: 16px;
     }
 
    .preparation {
     background-color: rgba(252, 244, 247, 1);
     border-radius: 8px;
-    padding-left: 16px;
+    padding-left: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
 
-  .preparation li {
-    padding: 8px
-  }
-
-  .content li {
-    padding: 8px;
-  }
-
-  .content p{
-    border-bottom: 2px;
-  }
 
     .card h1 {
       font-family: "Young Serif", serif;
@@ -93,7 +82,7 @@
       font-style: normal;
     }
     .card h3 {
-      color: rgb(71, 15, 43);
+      color: rgb(147, 35, 91);
     }
     .card h4 {
       color: rgb(114, 71, 41);
@@ -101,7 +90,10 @@
       font-optical-sizing: auto;
       font-weight: 600;
       font-style: normal;
-      padding: 0%;
+    }
+    .card p {
+      padding: 8px;
+      padding-top: 0px;
     }
     .table {
       width: 100%;
@@ -114,13 +106,41 @@
     .table tr:last-child td {
       border-bottom: none;
     }
+    .content li {
+      padding: 8px;
+      padding-left: 16px;
+    }
+    .instruction ol {
+      padding: 0px;
+      list-style-position: outside;
+    }
+    .content ul {
+      padding: 16px;
+      padding-top: 0px;   
+      list-style-position: outside;
+    }
+    .instruction {
+      padding: 16px;
+      padding-top: 0px;
+    }
+
+    .preparation li::marker {
+      color:rgb(147, 35, 91);
+    }
+    .ingredients li::marker{
+      color: rgb(114, 71, 41);
+    }
+    .instruction li::marker {
+      color: rgb(114, 71, 41);
+      font-weight: bold;
+      font-family: "Outfit", sans-serif;;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <div>
-      <img src="./assets/images/image-omelette.jpeg"></div>
+      <img src="./assets/images/image-omelette.jpeg">
   <div class="content">
     <h1>Simple Omelette Recipe</h1>
     <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection,
@@ -133,6 +153,7 @@
   <li><b>Preparation</b>: 5 minutes</li>
   <li><b>Cooking</b>: 5 minutes</li>
 </ul></div>
+<div class="ingredients">
 <h2>
   Ingredients
 </h2>
@@ -142,16 +163,16 @@
   <li>Pepper, to taste</li>
   <li>1 tablespoon of butter or oil</li>
   <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-</ul>
+</ul></div><hr>
+
 <h2>
   Instructions
 </h2>
-<p>
-  <ol type="1">
- <li> <b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+  <ol class="instruction">
+    <li><b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
   You can add a tablespoon of water or milk for a fluffier texture.</li>
 
- <li> <b>Heat the pan</b>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+ <li><b>Heat the pan</b>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
 
   <li><b>Cook the omelette</b>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
   the eggs evenly coat the surface.</li>
@@ -163,11 +184,10 @@
   fillings. Let it cook for another minute, then slide it onto a plate.</li>
 
  <li><b> Enjoy</b>: Serve hot, with additional salt and pepper if needed.</li></ol>
-</p>
+<hr>
 <h2>
   Nutrition
 </h2>
-<p>
   The table below shows nutritional values per serving without the additional fillings.
 <table class="table">
   <tr>
@@ -187,7 +207,6 @@
     <td><h4>22g</h4></td>
   </tr>
 </table>
-</p>
 </div>
   </div>
   <div class="attribution">
